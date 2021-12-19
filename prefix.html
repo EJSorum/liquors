@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+// so this time i use 'toggle' to determine whether to add a char or not
+// so this works for 'fl' but not for 'cir', 'car'
+
+let strs = ['goo', 'gro'];
+var longestCommonPrefix = function(strs) {
+    let newStr = [];
+    let toggle = 1;
+    for (let char = 0; char < strs[0].length; char++) {
+        
+        for (let word = 1; word < strs.length; word++) {
+            if (strs[0][char] != strs[word][char]) {
+                    toggle = 0;
+                }
+        }
+        if (toggle == 1) {
+            newStr.push(strs[0][char])
+        }
+    }
+return newStr.join('');
+}
+console.log(longestCommonPrefix(strs));
+
+/*
+let strs = ['flowers', 'flow', 'flight'];
+var longestCommonPrefix = function(strs) {
+    let newStr = [];
+    for (let char = 0; char < strs[0].length; char++) {
+        for (let word = 0; word < strs.length; word++) {
+            if (strs[i][char] === strs[word][char]) {
+                // add another loop here to cycle through each word
+                for (let i = 1; i < strs.length; i++) {
+                    if (strs[i][char] === strs[word][char]) {
+                
+                    newStr.push(strs[0][char])
+                    }
+                }
+            }
+        }
+    }
+    // so i need to compare the char to each word, not just the first;
+
+// maybe need a "switch" in the second loop.  if the switch is on, then
+// push the char into the newStr
+
+
+return newStr.join('');
+}
+console.log(longestCommonPrefix(strs));
+
+
+
+// so this time simplify.  i'm getting too many  letters, maybe i can 
+// do it in one loop
+
+let strs = ['flowers', 'flow', 'flight'];
+var longestCommonPrefix = function(strs) {
+    let newStr = [];
+    for (let char = 0; char < strs[0].length; char++) {
+        
+            if (strs[0][char] === strs[word][char]) {
+                newStr.push(strs[0][char])
+            }
+        }
+    }
+    // so i need to compare the char to each word, not just the first;
+
+return newStr.join('');
+}
+console.log(longestCommonPrefix(strs));
+*/
+</script>  
+
+</body>
+</html>

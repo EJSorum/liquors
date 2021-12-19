@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form>
+    <p>Enter Julian date:<input id="julianDate"></p>
+    <p><button onclick="julian()" type="submit">Submit</button></p>
+</form>
+
+<script>
+
+function capture() {
+    var i = document.getElementById("julianDate").value;
+ 
+}
+
+document.open();
+    document.write(i);
+    document.close();
+
+
+function error() {
+    document.open();
+    document.write("<p>Please enter a valid date.</p>");
+    document.close();
+}
+
+function julian() {
+    var i = document.getElementById("julianDate").value;
+    let month;
+    let day;
+    if (i > 365) {
+        error();
+    } else if (i > 334) {
+    month = 'December'
+    day = 365 - 334;
+    } else if (i > 304) {
+    month = 'November'
+    day = i - 304;
+    } else if (i > 273) {
+        month = 'October'; 
+        day = i - 273;
+    } else if (i > 243) {
+        month = 'September';
+        day = i - 243;
+    } else if (i > 212) {
+        month = 'August';
+        day = i - 212;
+    } else if (i > 181) {
+        month = 'July';
+        day = i - 181;
+    } else if (i > 151) {
+        month = 'June';
+        day = i - 151;
+    } else if (i > 120) {
+        month = 'May';
+        day = i - 120;
+    } else if (i > 90) {
+        month = 'April';
+        day = i - 90;
+    } else if (i > 59) {
+        month = 'March';
+        day = i - 59;
+    } else if (i > 31) {
+        month = 'February';
+        day = i - 31;
+    } else if (i > 0) {
+        month = 'January';
+        day = i;
+    } else if (i < 1) {
+        error();
+    }
+document.open();
+document.write(month + ' ' + day);
+document.close();
+
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #9301f5d2;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    color: #9301f5d2;
+    font-size: 16px;
+} 
+
+h3 {
+  color: #9301f5d2;
+  font-style: italic;
+}
+
+.slideshows {
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+} 
+ 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.rewards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ ul {
+    list-style-type: none;
+ }
+
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: first baseline;
+   gap: 25px;
+   color: white;   
+   background-color: #9301f5d2;
+  width: 100%;
+ }
+ 
+/* Social media images -------------------------*/
+
+.smimage {width: 60px; height: 60px;}
+
+
+/* Link style ---------------------------------*/
+
+a:link {color: white; text-decoration: none;}
+a:hover {color: rgba(255, 255, 255, 0.5); text-decoration: none;}
+a:active {color: rgba(255, 255, 255, 0.5); text-decoration: none;}
+a:visited {color: rgba(255, 255, 255, 0.5); text-decoration: none;}
+
+ /* Dropdown Button---------------------------------------------------------- */
+ .dropbtn {
+    
+    color: #9301f5d2;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9301f5d2;
+    color: white;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #9301f5d2;}
+  .dropbtn:hover {background-color: #9301f5d2;}
+  .dropbtn:hover {color: white} 
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #9301f5d2;} 
+  .dropdown:hover .dropbtn {color: white} 
+
+.address {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.directions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slides ------------------------------------------------ */
+.slideshows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.mySlides {
+  display: none;}
+  
+
+.allSlides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+  
+}
+
+.crop {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.active {
+  background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
