@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: #9301f5d2;
+    gap: 40px;
 }
 
 .header {
