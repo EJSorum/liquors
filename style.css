@@ -68,9 +68,9 @@ h3 {
 /* Link style ---------------------------------*/
 
 a:link {color: white; text-decoration: none;}
-a:hover {color: rgba(255, 255, 255, 0.5); text-decoration: none;}
-a:active {color: rgba(255, 255, 255, 0.5); text-decoration: none;}
-a:visited {color: rgba(255, 255, 255, 0.5); text-decoration: none;}
+a:hover {color: white; text-decoration: none;}
+a:active {color: white; text-decoration: none;}
+a:visited {color: white; text-decoration: none;}
 
  /* Dropdown Button---------------------------------------------------------- */
  .dropbtn {
